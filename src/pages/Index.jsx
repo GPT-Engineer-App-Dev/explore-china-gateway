@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Utensils, Landmark, Camera, ChevronDown } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-100 to-red-200">
+      <Navbar />
       <header className="relative bg-red-600 text-white py-12 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <motion.h1 
